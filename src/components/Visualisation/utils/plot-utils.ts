@@ -1,1 +1,3 @@
-export const drawVisualisation = (width: number, height: number) => {};
+export const drawVisualisation = (width: number, height: number) => {
+    return { width, height };
+};

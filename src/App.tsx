@@ -1,8 +1,8 @@
-import React from "react";
-import { Visualisation } from "./components/Visualisation/Visualisation";
+import React from 'react';
+import { Visualisation } from './components/Visualisation/Visualisation';
 
 function App() {
-  return <Visualisation />;
+    return <Visualisation />;
 }
 
 export default App;
