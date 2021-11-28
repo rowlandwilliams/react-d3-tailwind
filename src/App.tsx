@@ -1,9 +1,9 @@
 import React from "react";
 import "./App.css";
-import { Map } from "./components/Map/Map";
+import { Visualisation } from "./components/Visualisation/Visualisation";
 
 function App() {
-  return <Map />;
+  return <Visualisation />;
 }
 
 export default App;

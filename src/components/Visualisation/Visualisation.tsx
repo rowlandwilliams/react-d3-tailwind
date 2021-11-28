@@ -1,10 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import classNames from "classnames";
 import { debounce } from "lodash";
-import { statePolygons } from "./utils/data/statePolygons";
-import { drawMap } from "./utils/plot-utils";
+import { drawVisualisation } from "./utils/plot-utils";
 
-export const Map = () => {
+export const Visualisation = () => {
   const parentRef = useRef<HTMLDivElement>(null);
   const [width, setWidth] = useState(0);
   const [height, setHeight] = useState(0);
@@ -27,7 +26,7 @@ export const Map = () => {
   }, [parentRef, handleWindowResize]);
 
   useEffect(() => {
-    drawMap(width, height, statePolygons);
+    drawVisualisation(width, height);
     setIsLoaded(true);
   }, [width, height]);
 
@@ -41,10 +40,7 @@ export const Map = () => {
         ref={parentRef}
       >
         <svg width={width} height={height} id="map-svg">
-          <g id="map-parent">
-            <g id="map-group"></g>
-            <g id="point-group"></g>
-          </g>
+          <rect width={width} height={height} fill="red"></rect>
         </svg>
       </div>
     </>

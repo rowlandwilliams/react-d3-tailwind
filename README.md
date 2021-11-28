@@ -1,8 +1,7 @@
-# [US Cities Population Map](https://rowlandwilliams.github.io/us-cities-population-map)
+# React / TypeScript, TailwindCSS and d3.js boilerplate
 
-An interactive map of the 400 largest American cities by population in 2013.
+This is a quick-start for any project involving React / TypeScript and d3.js.
 
-Tech:
+The visualisation component is already set up to auto-scale on window resize. using the useRef() and useEffect() hooks.
 
-- React / TypeScript
-- d3.js
+TailwindCSS is also ready to go for out of the box consistent styling.
